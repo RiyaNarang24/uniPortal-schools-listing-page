@@ -6,8 +6,7 @@ import Hero from "./components/Hero";
 import Filters from "./components/Filters";
 import SchoolGrid from "./components/SchoolGrid";
 import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+
 export default function Home() {
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -25,7 +24,6 @@ export default function Home() {
 };
   return (
     <main className="min-h-screen bg-gray-50">
-<Navbar/>
       <Hero
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
@@ -50,7 +48,6 @@ export default function Home() {
         fees={appliedFees}
       />
 <FAQ/>
-<Footer/>
     </main>
   );
 }
